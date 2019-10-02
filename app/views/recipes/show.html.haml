@@ -7,26 +7,26 @@
         %h1= @recipe.title
         %p.description= @recipe.description
         %p
-          Submitted by
+          投稿者：
           = @recipe.user.email
 
   .row
     .col-md-6
       #ingredients
-        %h2 Ingredients
+        %h2 材料
         %ul
           - @recipe.ingredients.each do |ingredient|
             %li= ingredient.name
 
     .col-md-6
       #directions
-        %h2 Directions
+        %h2 作り方
         %ul
           - @recipe.directions.each do |direction|
             %li= direction.step
   .row
     .col-md-12
-      = link_to "Back", root_path, class:"btn btn-default"
+      = link_to "戻る", root_path, class:"btn btn-default"
       - if user_signed_in?
-        = link_to "Edit", edit_recipe_path, class: "btn btn-default"
-        = link_to "Delete", recipe_path, method: :delete, data:{confirm: "Are you sure ?"}, class: "btn btn-default"
+        = link_to "編集", edit_recipe_path, class: "btn btn-default"
+        = link_to "削除", recipe_path, method: :delete, data: {confirm: "本当に削除しますか?"}, class: "btn btn-default"

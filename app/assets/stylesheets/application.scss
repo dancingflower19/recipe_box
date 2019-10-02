@@ -16,6 +16,7 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
 
 @mixin box-shadow {
 	-webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
@@ -27,6 +28,7 @@ $red: #DB6161;
 
 body {
 	background: rgb(235, 238, 243);
+	font-family: 'Hiragino Kaku Gothic Pro';
 }
 
 .main_content {
