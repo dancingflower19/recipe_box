@@ -28,7 +28,7 @@ $red: #DB6161;
 
 body {
 	background: rgb(235, 238, 243);
-	font-family: 'Hiragino Kaku Gothic Pro';
+	font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 .main_content {
@@ -115,10 +115,11 @@ body {
 		font-size: 36px;
 		font-weight: normal;
 		color: $red;
+		text-align: center;
 	}
 	.description {
 		color: #8A8A8A;
-		font-size: 20px;
+		font-size: 15px;
 	}
 }
 

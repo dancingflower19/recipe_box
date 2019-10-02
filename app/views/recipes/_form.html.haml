@@ -22,7 +22,7 @@
           = link_to_add_association '材料を追加', f, :ingredients, class: "btn btn-default add-button"
 
     .col-md-6
-      %h3 作り方
+      %h3 つくり方
       #directions
         = f.simple_fields_for :directions do |direction|
           = render 'direction_fields', f: direction
